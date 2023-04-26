@@ -23,14 +23,15 @@ const getAllGithubUsers = async () => {
 
 
 // getting user information by name
-async function getUserByUserName (userName) {
+export async function getUserByUserName (userName) {
     const user = await fetch(`https://api.github.com/users/${userName}`, {
         method: 'GET'
     })
 
     .then(res => {
         if(res.ok){
-            return res.json('Username não encontrado')
+            window.location.replace('src/pages/profile.html')
+            return res.json()
         } else{
             window.location.replace('src/pages/error.html')
             // throw new Error()
@@ -68,25 +69,25 @@ async function getRepositoryByUserName (userName) {
 }
 
 
-// Custmizing the serach button
+// Custmizing the search button
 const input = document.querySelector('.mainForm__input')
 const button =document.querySelector('.mainForm__button')
 // console.log(button)
 button.addEventListener('click', async (event) => {
     event.preventDefault()
-    const userName = await getUserByUserName(input.value)    
-    render(userName)    
+    // window.location.replace('src/pages/profile.html')
+    localStorage.setItem('UserName', JSON.stringify(input.value));    
+    const userName = await getUserByUserName(input.value)
+    const avatarURL = userName.avatar_url
+    localStorage.setItem('avatarURL', JSON.stringify(avatarURL));    
+
+    // const render = await render(userName)  
+    // console.log(userName)  
 })
 
 
 
 
-const allUsers = await getAllGithubUsers()
-// const userName = await getUserByUserName('mojombo')
-const repository = await getRepositoryByUserName('mojombo')
 
-// console.log(allUsers)
-// console.log(userName)
-// console.log(repository)
 
 
