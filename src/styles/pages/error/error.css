@@ -1,0 +1,104 @@
+.error__body{
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-7);
+    display: flex;
+}
+
+.body__firstPart{
+    margin-left: 20.1875rem;
+    margin-top: 16.7875rem;
+    width: 21.375rem;
+
+}
+
+.bodyFirstPart__h1{
+    margin-bottom: 1.25rem;
+}
+
+.bodyFirstPart__p{
+    margin-bottom: .625rem;
+}
+
+/* .bodyFirstPart__span{} */
+
+.bodyFirstPart__button{
+    width: 21.375rem;
+    padding-top: 1.3125rem;
+    padding-right: 4.7856rem;
+    padding-bottom: 1.3125rem;
+    padding-left: 4.7856rem;
+    color: var(--color-grey-7);
+    background-color: var(--color-brand-2);
+    border-radius: 8px;
+    border: none;    
+    cursor: pointer;
+}
+
+.bodyFirstPart__button:hover{
+    background-color: var(--color-brand-1);
+    transition: .5s;
+}
+
+
+.body__secondPart{
+    margin-left: 9.75rem;
+}
+
+
+.bodySecondPart__pinkBox{
+    background-color: var(--color-brand-2);
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: 51.3125rem;
+    top: 11.1875rem;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+
+.pinkBoxTriangle__p{
+    color: var(--color-brand-2);
+    background-color: transparent;
+    position: absolute;
+    left: 62.78rem;
+    top: 20rem;
+    z-index: 5;
+}
+
+.bodySecondPart__purpleBox{
+    background-color: var(--color-error);
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    left: 52.625rem;
+    top: 12.875rem;
+    border-radius: 5px;
+}
+
+.pinkBox__Triangle, .pinkBox__Triangle:before, .pinkBox__Triangle:after { width: 9em; height: 9em; }
+.pinkBox__Triangle {
+    overflow: hidden;
+    position: relative;
+    margin: 6em auto 0;
+    border-radius: 20%;
+    transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(.866);
+    /* cursor: pointer; */
+    pointer-events: none;
+} 
+.pinkBox__Triangle:before, .pinkBox__Triangle:after {
+    position: absolute;
+    background: var(--color-grey-7);
+    pointer-events: auto;
+    content: '';
+}
+.pinkBox__Triangle:before {
+    border-radius: 20% 20% 20% 53%;
+    transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) 
+            skewX(30deg) scaleY(.866) translateX(-24%);
+}
+.pinkBox__Triangle:after {
+    border-radius: 20% 20% 53% 20%;
+    transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) 
+            skewX(-30deg) scaleY(.866) translateX(24%);
+}

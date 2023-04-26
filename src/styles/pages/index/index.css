@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    height: 100vh;
+}
+
+/* main__leftSide */
+.main__leftSide{
+    background-color: var(--color-brand-1);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainLeftSide__h1{
+    color: var(--color-grey-7);
+    margin-left: 9.4375rem;
+    margin-right: 7.625rem;
+    margin-bottom: 2.3125rem;
+    width: 26.9375rem;
+}
+
+.mainLeftSide__p{
+    color: var(--color-grey-7);
+    margin-left: 9.4375rem;
+    margin-right: 7.625rem;
+}
+

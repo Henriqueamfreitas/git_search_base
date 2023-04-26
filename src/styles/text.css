@@ -1,0 +1,86 @@
+/* USER PROFILE PAGE */
+/* GIT SEARCH PAGE */
+
+.problem{
+  font-size: 6.25rem;
+  font-weight: 900;
+}
+
+/* Ooops! */
+.title-1{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+}
+
+/* Git search */
+.title-2{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+}
+
+/* Samuel Leão */
+.title-3{
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-1);
+}
+
+/* Procurar por um usuário; Título do projeto */
+.title-4{
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-3);
+}
+
+/* Usuário Github */
+.title-5{
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-3);
+}
+
+
+/* Encontre e se conecte com profissionais de forma rápida e fácil */
+.text-2{
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-4);
+}
+
+/* button (nova busca) */
+.text-3{
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-2);
+}
+
+
+/* vamos tentar novamente */
+.text-4{
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-2);
+}
+
+
+/* Não encotramos o usuário que você procurou */
+.text-5{
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-4);
+}
+
+/* Button (trocar de usuário) */
+.text-6{
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-2);
+}
+
+/* Button (ver perfil do github); button (repositório) */
+.text-7{
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-3);
+}
+
+/* Descrição do projeto */
+.text-8{
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-4);
+}
+
+
+
+
