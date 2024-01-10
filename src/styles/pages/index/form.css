@@ -29,7 +29,6 @@
     border: none;
     margin-bottom: 1.25rem;
     padding-top: .5rem;
-/*     padding-right: 4.8125rem; */
     padding-bottom: .5rem;
     padding-left: .8125rem;
     border-radius: .25rem;
@@ -51,9 +50,7 @@
     background-color: var(--color-brand-2);
     border-radius: .25rem;
     padding-top: .5313rem;
-/*     padding-right: 5:.8438rem; */
     padding-bottom: .5313rem;
-/*     padding-left: 5.8438rem; */
     width: 19.75rem;
     cursor: pointer;
 }

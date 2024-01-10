@@ -19,8 +19,6 @@
     margin-bottom: .625rem;
 }
 
-/* .bodyFirstPart__span{} */
-
 .bodyFirstPart__button{
     width: 21.375rem;
     padding-top: 1.3125rem;
@@ -29,7 +27,7 @@
     padding-left: 4.7856rem;
     color: var(--color-grey-7);
     background-color: var(--color-brand-2);
-    border-radius: 8px;
+    border-radius: .5rem;
     border: none;    
     cursor: pointer;
 }
@@ -39,23 +37,20 @@
     transition: .5s;
 }
 
-
 .body__secondPart{
     margin-left: 9.75rem;
 }
 
-
 .bodySecondPart__pinkBox{
     background-color: var(--color-brand-2);
-    width: 400px;
-    height: 350px;
+    width: 25rem;
+    height: 21.875rem;
     position: absolute;
     left: 51.3125rem;
     top: 11.1875rem;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
-
 
 .pinkBoxTriangle__p{
     color: var(--color-brand-2);
@@ -68,12 +63,12 @@
 
 .bodySecondPart__purpleBox{
     background-color: var(--color-error);
-    width: 400px;
-    height: 350px;
+    width: 25rem;
+    height: 21.875rem;
     position: absolute;
     left: 52.625rem;
     top: 12.875rem;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 
 .pinkBox__Triangle, .pinkBox__Triangle:before, .pinkBox__Triangle:after { width: 9em; height: 9em; }
@@ -83,9 +78,9 @@
     margin: 6em auto 0;
     border-radius: 20%;
     transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(.866);
-    /* cursor: pointer; */
     pointer-events: none;
 } 
+
 .pinkBox__Triangle:before, .pinkBox__Triangle:after {
     position: absolute;
     background: var(--color-grey-7);

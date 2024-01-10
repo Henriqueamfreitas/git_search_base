@@ -4,21 +4,17 @@ const repository = await getRepositoryByUserName(userName)
 
 
 async function createCard(array){
-    // Creating the HTML elements
     const div = document.createElement('div')
     const h2 = document.createElement('h2')
     const p = document.createElement('p')
     const button = document.createElement('button')
     
-    // Establishing the hierarchy between elements
     div.append(h2,p,button)
 
-    // Assigning value to the elements
     h2.innerHTML = array.name
     p.innerHTML = array.description
     button.innerHTML = 'Repositório'
 
-    // Assigning classes to the elements
     div.classList = 'divCards__card'
     h2.classList = 'card__h2 title-4'
     p.classList = 'card__p text-8'
@@ -28,7 +24,6 @@ async function createCard(array){
 }
 
 async function render(array){
-    // Creating the HTML elements
     const body = document.querySelector('.body__profile')
     const divTopPart = document.createElement('div')
     const divUser = document.createElement('div')
@@ -37,17 +32,14 @@ async function render(array){
     const button = document.createElement('button')
     const divCards = document.createElement('div')
 
-    // Establishing the hierarchy between elements
     body.append(divTopPart, divCards)
     divTopPart.append(divUser, button)
     divUser.append(img, h1)
 
-    // Assigning value to the elements
     h1.innerHTML = userName
     img.src = avatarURL
     button.innerHTML = 'Trocar de usuário'
 
-    // Assigning classes to the elements
     body.classList = 'body__profile'
     divTopPart.classList = 'divTopPart'
     divUser.classList = 'divUser'
@@ -67,9 +59,6 @@ async function render(array){
     });
 }
 
-
-
-// getting the user's repository
 async function getRepositoryByUserName (userName) {
     const repository = await fetch(`https://api.github.com/users/${userName}/repos`, {
         method: 'GET'
@@ -79,16 +68,13 @@ async function getRepositoryByUserName (userName) {
         if(res.ok){
             return res.json()
         } else{
-            // window.location.replace('src/pages/error.html')
             throw new Error()
         }
     })
-
     .catch(error => {
         console.log(error)
     })
 
     return repository
 }
-
 render(repository)
