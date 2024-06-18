@@ -17,4 +17,4 @@ O fluxo da aplicação consiste em:
   - Link do repositório
  
 **Tecnologias**: HTML, CSS e Javascript
-**Link**: https://henriqueamfreitas.github.io/git_search_base/
+**Link**: https://git-search-base-bice.vercel.app/
